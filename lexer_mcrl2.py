@@ -29,7 +29,7 @@ class mCRL2(RegexLexer):
             (bounded_words(("allow", "hide", "rename", "comm")), token.Name.Builtin),
             (bounded_words(("map", "eqn", "var")), token.Keyword.Declaration),
             (bounded_words(("sum", "lambda")), token.Name.Builtin),
-            (r"[\.\+\-\*\/\!#=\<\>\[\]\@]", token.Operator),
+            (r"[\.\+\-\*\/\!#=\<\>\[\]\@|]+", token.Operator),
             (bounded_words(("div", "mod")), token.Operator.Word),
             (bounded_words(builtin_actions), token.Name.Constant),
             (bounded_words(builtin_constants), token.Keyword.Constant),
