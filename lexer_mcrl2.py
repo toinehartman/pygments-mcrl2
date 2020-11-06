@@ -39,7 +39,7 @@ class mCRL2(RegexLexer):
             (r"[#,;:\(\)]", token.Punctuation),
             (r"\w[\w\d]*", token.Name),
             (r"\s+", token.Whitespace),
-            (r".+", token.Text)
+            (r".+", token.Text)  # Catch any erronous tokens
         ]
     }
 
